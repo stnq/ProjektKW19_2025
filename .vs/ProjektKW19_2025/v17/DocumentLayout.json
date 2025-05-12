@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +30,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tutorial.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Tutorial.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\Tutorial.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Tutorial.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\Tutorial.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:08:57.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Story.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Story.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\Story.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Story.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\Story.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:12:25.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Item.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\Item.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Item.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:07:18.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Player.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\Player.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Player.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:06:20.51Z"
             },
             {
               "$type": "Document",
@@ -28,9 +93,9 @@
               "RelativeDocumentMoniker": "ProjektKW19_2025\\Program.cs",
               "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Program.cs",
               "RelativeToolTip": "ProjektKW19_2025\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:18:12.087Z",
+              "WhenOpened": "2025-05-12T15:04:53.788Z",
               "EditorCaption": ""
             }
           ]
