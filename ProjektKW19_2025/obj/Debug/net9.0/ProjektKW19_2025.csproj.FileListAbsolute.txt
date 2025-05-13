@@ -3,3 +3,13 @@ C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj
 C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\ProjektKW19_2025.AssemblyInfo.cs
 C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\ProjektKW19_2025.csproj.CoreCompileInputs.cache
 C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\ProjektKW19_2025.sourcelink.json
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\bin\Debug\net9.0\ProjektKW19_2025.exe
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\bin\Debug\net9.0\ProjektKW19_2025.deps.json
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\bin\Debug\net9.0\ProjektKW19_2025.runtimeconfig.json
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\bin\Debug\net9.0\ProjektKW19_2025.dll
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\bin\Debug\net9.0\ProjektKW19_2025.pdb
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\ProjektKW19_2025.dll
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\refint\ProjektKW19_2025.dll
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\ProjektKW19_2025.pdb
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\ProjektKW19_2025.genruntimeconfig.cache
+C:\Users\PatrichiIoan-Cristia\source\repos\ProjektKW19_2025\ProjektKW19_2025\obj\Debug\net9.0\ref\ProjektKW19_2025.dll
