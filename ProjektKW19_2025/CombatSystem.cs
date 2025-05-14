@@ -1,5 +1,6 @@
 
 using System;
+using WorldsWorstGamedev;
 
 public static class CombatSystem
 {
@@ -10,24 +11,43 @@ public static class CombatSystem
         while (player.IsAlive() && enemy.IsAlive())
         {
             Console.WriteLine($"{player.Name} HP: {player.Health} | {enemy.Name} HP: {enemy.Health}");
-            Console.WriteLine("1) Angreifen 2) Inventar öffnen 3) Gegner untersuchen");
+            Console.WriteLine("1) Angreifen 2) Inventar oeffnen 3) Gegner untersuchen");
 
             string input = Console.ReadLine();
             if (input == "1") player.Attack(enemy);
             else if (input == "2") player.Inventory.ShowInventory();
             else if (input == "3") Console.WriteLine($"{enemy.Name} sieht fehlerhaft aus... Bugtyp erkannt.");
-            else Console.WriteLine("Ungültige Eingabe.");
+            else Console.WriteLine("Ungueltige Eingabe.");
 
             if (enemy.IsAlive()) enemy.Attack(player);
         }
 
-        if (player.IsAlive())
-        {
-            Console.WriteLine($"✅ {enemy.Name} wurde besiegt!");
-            return true;
-        }
+		if (player.IsAlive())
+		{
+			Console.WriteLine($"✅ {enemy.Name} wurde besiegt!");
 
-        Console.WriteLine("☠️ Du wurdest besiegt...");
-        return false;
-    }
+			Console.WriteLine("\n💾 Moechtest du deinen Fortschritt jetzt speichern?");
+			Console.WriteLine("1) Ja");
+			Console.WriteLine("2) Nein");
+
+			string input = Console.ReadLine();
+			if (input == "1")
+			{
+				SaveSystem.Save(new GameState
+				{
+					ZoneName = GameManager.Progress.CurrentZone,
+					Motivation = GameManager.Status.Motivation,
+					Caffeine = GameManager.Status.Caffeine,
+					Skill = GameManager.Status.SkillPoints,
+					InventoryItems = GameManager.Player.Inventory.GetAllItems(),
+					CompanionName = GameManager.Player.Companion?.Name ?? ""
+				});
+			}
+
+			return true;
+		}
+
+		Console.WriteLine("☠️ Du wurdest besiegt...");
+		return false;
+	}
 }

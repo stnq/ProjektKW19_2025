@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class Player
 {
     public string Name { get; set; }
-    public int Health { get; set; } = 100;
-    public int Damage { get; set; } = 10;
+    public int Health { get; set; } = 200;
+    public int Damage { get; set; } = 15 ;
     public Companion? Companion { get; set; }
     public Inventory Inventory { get; set; }
 
@@ -30,7 +30,7 @@ public class Player
         {
             int extra = Companion.GetDamage(Damage);
             totalDamage += extra;
-            Console.WriteLine($"🛡️ Dein Begleiter {Companion.Name} fügt {extra} Bonus-Schaden hinzu!");
+            Console.WriteLine($"🛡️ Dein Begleiter {Companion.Name} fuegt {extra} Bonus-Schaden hinzu!");
         }
 
         enemy.Health -= totalDamage;

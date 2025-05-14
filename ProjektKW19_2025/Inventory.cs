@@ -48,7 +48,7 @@ public class Inventory
                 GameManager.Status.Caffeine += 20;
                 break;
             case "Kaputte Tastatur":
-                Console.WriteLine("⌨️ Du hast ein defektes Artefakt gefunden... Vielleicht ist es später wichtig.");
+                Console.WriteLine("⌨️ Du hast ein defektes Artefakt gefunden... Vielleicht ist es spaeter wichtig.");
                 break;
             default:
                 Console.WriteLine("Das Item scheint keinen Effekt zu haben...");
@@ -57,4 +57,11 @@ public class Inventory
 
         items.Remove(item);
     }
+
+	public List<string> GetAllItems()
+	{
+		return new List<string>(items);
+	}
+
+
 }

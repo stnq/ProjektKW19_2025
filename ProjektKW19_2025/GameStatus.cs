@@ -28,7 +28,7 @@ public class GameStatus
     public void TrinkeKaffee()
     {
         Caffeine += 20;
-        Console.WriteLine("☕ Du fühlst dich wacher. (+20 Koffein)");
+        Console.WriteLine("☕ Du fuehlst dich wacher. (+20 Koffein)");
     }
 
     public void VerliereMotivation(int menge)

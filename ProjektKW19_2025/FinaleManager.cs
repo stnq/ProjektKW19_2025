@@ -40,11 +40,11 @@ public static class FinaleManager
     {
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("🎉 GLÜCKWUNSCH!");
+        Console.WriteLine("🎉 GLUECKWUNSCH!");
         Console.ResetColor();
 
-        Console.WriteLine("Du hast alle Bugs bekämpft, das Legacy-System überlebt...");
-        Console.WriteLine("Und schließlich sogar den gefürchteten Exec 'Antares' besiegt.");
+        Console.WriteLine("Du hast alle Bugs bekaempft, das Legacy-System ueberlebt...");
+        Console.WriteLine("Und schließlich sogar den gefuerchteten Exec 'Antares' besiegt.");
         Console.WriteLine("Ein letzter Lichtblitz blendet dich.");
         Console.WriteLine("\n[REBOOTING...]");
         Console.WriteLine("\n...");
@@ -58,12 +58,12 @@ public static class FinaleManager
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("\n💡 ABSPANN:");
         Console.WriteLine("- Helmut Hardcode: Du selbst");
-        Console.WriteLine("- Gegnerdesign: Deine schlimmsten Debug-Nächte");
+        Console.WriteLine("- Gegnerdesign: Deine schlimmsten Debug-Naechte");
         Console.WriteLine("- Codeassistenz: ChatGPT... *äh... deine harte Arbeit natürlich*");
         Console.WriteLine("- Musik: Deine Kaffee-Maschine");
         Console.ResetColor();
 
-        Console.WriteLine("\n[ENTER drücken, um das Spiel zu beenden]");
+        Console.WriteLine("\n[ENTER druecken, um das Spiel zu beenden]");
         Console.ReadKey();
         Environment.Exit(0);
     }

@@ -1,0 +1,12 @@
+{
+  "ZoneName": "Anfaengerzone",
+  "DefeatedEnemies": [],
+  "DefeatedBosses": [],
+  "Motivation": 100,
+  "Caffeine": 50,
+  "Skill": 1,
+  "InventoryItems": [
+    "Energy Drink"
+  ],
+  "CompanionName": ""
+}

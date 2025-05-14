@@ -8,7 +8,7 @@ public static class ZoneManager
     {
         return zone switch
         {
-            "Anfängerzone" => new List<BugEnemy>
+            "Anfaengerzone" => new List<BugEnemy>
             {
                 new BugEnemy("OffByOne-Gnome", 20, 5),
                 new BugEnemy("Nullie der Nullinator", 15, 4),
@@ -24,7 +24,7 @@ public static class ZoneManager
             },
             "EndZone" => new List<BugEnemy>
             {
-                new BugEnemy("Deadline-Dämon", 50, 12),
+                new BugEnemy("Deadline-Daemon", 50, 12),
                 new BugEnemy("MissingSemicolon", 40, 10),
                 new BugEnemy("Captain CodeSmell", 45, 11),
             },
@@ -36,11 +36,11 @@ public static class ZoneManager
     {
         return zone switch
         {
-            "Anfängerzone" => new List<BossEnemy>
+            "Anfaengerzone" => new List<BossEnemy>
             {
                 new BossEnemy("RNGesus-Shadow", 50, 10, "RandomCrit()", "USB: RNG-Fragment", true),
                 new BossEnemy("TryCatch-Troll", 60, 8, "BlockAndExplode()", "USB: TrollShadow", true),
-                new BossEnemy("Merge-Konflikt-Mönch", 70, 7, "ResolveForce()", "USB: GitShadow", true),
+                new BossEnemy("Merge-Konflikt-Moench", 70, 7, "ResolveForce()", "USB: GitShadow", true),
                 new BossEnemy("Dependency-Krake", 65, 9, "LibTentacle()", "", false),
                 new BossEnemy("SpaghettiBot 3000", 80, 11, "GotoLoop()", "", false)
             },
@@ -65,7 +65,7 @@ public static class ZoneManager
     {
         return current switch
         {
-            "Anfängerzone" => "MidZone",
+            "Anfaengerzone" => "MidZone",
             "MidZone" => "EndZone",
             "EndZone" => "Finale",
             _ => "Finale"

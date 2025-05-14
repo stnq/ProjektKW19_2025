@@ -20,26 +20,81 @@ namespace WorldsWorstGamedev
 
         public static void InitializeGame()
         {
-            Player = new Player("Helmut Hardcode");
-            State = new GameState();
-            Status = new GameStatus();
-            Progress = new ProgressTracker();
-        }
+			if (State == null)
+				State = new GameState();
 
-        public static void StartTutorial()
+			Player = new Player("Helmut Hardcode");
+			Player.Inventory = new Inventory();
+
+			Status = new GameStatus
+			{
+				Motivation = State.Motivation,
+				Caffeine = State.Caffeine,
+				SkillPoints = State.Skill
+			};
+
+			Progress = new ProgressTracker
+			{
+				CurrentZone = State.ZoneName
+			};
+
+			foreach (var item in State.InventoryItems)
+			{
+				Player.Inventory.AddItem(item);
+			}
+
+			if (!string.IsNullOrEmpty(State.CompanionName))
+			{
+				Player.Companion = new Companion(State.CompanionName, 4);
+			}
+		}
+		public static void NewGame()
+		{
+			InitializeGame();
+			TextUtil.ShowIntro();
+			Interface.ShowFirstChoice();
+		}
+
+		public static void LoadGame()
+		{
+			State = SaveSystem.Load(); 
+			InitializeGame();          
+
+			if (Progress.CurrentZone == "TutorialZone")
+			{
+				Interface.ShowFirstChoice();
+			}
+			else
+			{
+				ZoneGameplay.PlayZone(Player, Status, Progress);
+			}
+		}
+		public static void StartTutorial()
         {
             Console.Clear();
-            Console.WriteLine("📘 TUTORIAL AKTIVIERT: 'Kämpfe gegen deinen ersten Bug.'\n");
+            Console.WriteLine("📘 TUTORIAL AKTIVIERT: 'Kaempfe gegen deinen ersten Bug.'\n");
             BugEnemy enemy = new BugEnemy("BugMob.cs:Line17.NullReferenceException", 12, 3);
             bool victory = CombatSystem.Fight(Player, enemy);
 
             if (victory)
             {
-                Player.Inventory.AddItem("Energy Drink");
-                Status.ErhöheSkill("NullReference verstehen");
-                Progress.CurrentZone = "Anfängerzone";
-                ZoneGameplay.PlayZone(Player, Status, Progress);
-            }
+				Player.Inventory.AddItem("Energy Drink");
+				Status.ErhöheSkill("NullReference verstehen");
+				Progress.CurrentZone = "Anfaengerzone";
+
+				
+				SaveSystem.Save(new GameState
+				{
+					ZoneName = Progress.CurrentZone,
+					Motivation = Status.Motivation,
+					Caffeine = Status.Caffeine,
+					Skill = Status.SkillPoints,
+					InventoryItems = Player.Inventory.GetAllItems(),
+					CompanionName = Player.Companion?.Name ?? ""
+				});
+
+				ZoneGameplay.PlayZone(Player, Status, Progress);
+			}
             else
             {
                 Console.WriteLine("☠️ Du bist im Tutorial gescheitert. Aber du kannst es nochmal versuchen.");
@@ -51,7 +106,7 @@ namespace WorldsWorstGamedev
         {
             Console.Clear();
             Console.WriteLine("Du rennst ohne Anleitung los. Wahrscheinlich eine schlechte Idee...");
-            Progress.CurrentZone = "Anfängerzone";
+            Progress.CurrentZone = "Anfaengerzone";
             ZoneGameplay.PlayZone(Player, Status, Progress);
         }
 
@@ -59,11 +114,44 @@ namespace WorldsWorstGamedev
         {
             Console.Clear();
             Console.WriteLine("🏁 Du hast 'World’s Worst Gamedev' erfolgreich abgeschlossen!");
-            Console.WriteLine("Helmut kehrt zurück in die echte Welt – mit Skillpunkten, einem Begleiter...");
-            Console.WriteLine("...und dem Wissen, dass er vielleicht doch kein völliger Noob ist.");
-            Console.WriteLine("\n🎓 Vielen Dank fürs Spielen!");
+            Console.WriteLine("Helmut kehrt zurueck in die echte Welt – mit Skillpunkten, einem Begleiter...");
+            Console.WriteLine("...und dem Wissen, dass er vielleicht doch kein voelliger Noob ist.");
+            Console.WriteLine("\n🎓 Vielen Dank fuers Spielen!");
             Console.ReadKey();
             Environment.Exit(0);
         }
-    }
+
+		public static void ReturnToMainMenu()
+		{
+			Console.Clear();
+			Console.WriteLine("📋 Hauptmenue:");
+			Console.WriteLine("1) Weiterspielen");
+			Console.WriteLine("2) Spielstand neu laden");
+			Console.WriteLine("3) Spiel beenden");
+
+			Console.Write("Auswahl: ");
+			string input = Console.ReadLine();
+
+			switch (input)
+			{
+				case "1":
+					ZoneGameplay.PlayZone(Player, Status, Progress);
+					break;
+
+				case "2":
+					LoadGame();
+					break;
+
+				case "3":
+					Console.WriteLine("👋 Spiel beendet. Auf Wiedersehen!");
+					Environment.Exit(0);
+					break;
+
+				default:
+					Console.WriteLine("Ungueltige Eingabe. Bitte erneut waehlen.");
+					ReturnToMainMenu();
+					break;
+			}
+		}
+	}
 }

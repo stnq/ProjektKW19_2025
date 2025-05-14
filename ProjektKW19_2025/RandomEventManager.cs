@@ -35,7 +35,7 @@ public static class RandomEventManager
         Console.WriteLine("\n⌨️ ZUFALLSEVENT: Deine Tastatur spinnt!");
         Console.ResetColor();
 
-        Console.WriteLine("Du drückst 'A' und es kommt 'Q'... du verlierst Zeit.");
+        Console.WriteLine("Du drueckst 'A' und es kommt 'Q'... du verlierst Zeit.");
         status.VerliereMotivation(10);
     }
 }

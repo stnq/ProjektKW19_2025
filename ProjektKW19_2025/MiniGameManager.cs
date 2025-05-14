@@ -37,9 +37,9 @@ public static class MiniGameManager
         Console.WriteLine("\n🚆 MINISPIEL: Escape the Infinite dBahn Loop");
         Console.ResetColor();
 
-        Console.WriteLine("Du sitzt im Zug... plötzlich Ansage: 'Verspätung wegen Verspätung.'");
-        Console.WriteLine("Wähle deine Aktion:");
-        Console.WriteLine("1) Fenster aufreißen\n2) Musik hören\n3) Meditieren");
+        Console.WriteLine("Du sitzt im Zug... ploetzlich Ansage: 'Verspaetung wegen Verspaetung.'");
+        Console.WriteLine("Waehle deine Aktion:");
+        Console.WriteLine("1) Fenster aufreißen\n2) Musik hoeren\n3) Meditieren");
 
         Console.Write("Aktion (1-3): ");
         var input = Console.ReadLine();
