@@ -6,7 +6,7 @@ public static class CombatSystem
 {
     public static bool Fight(Player player, BugEnemy enemy)
     {
-        Console.WriteLine($"⚔️ Kampf gestartet gegen: {enemy.Name}!");
+        Console.WriteLine($"Kampf gestartet gegen: {enemy.Name}!");
 
         while (player.IsAlive() && enemy.IsAlive())
         {
@@ -17,16 +17,19 @@ public static class CombatSystem
             if (input == "1") player.Attack(enemy);
             else if (input == "2") player.Inventory.ShowInventory();
             else if (input == "3") Console.WriteLine($"{enemy.Name} sieht fehlerhaft aus... Bugtyp erkannt.");
-            else Console.WriteLine("Ungueltige Eingabe.");
+            else Console.WriteLine("Ungueltige Eingabe. Bitte nur 1) 2) oder 3).");
 
             if (enemy.IsAlive()) enemy.Attack(player);
+
+			int totalDamage = player.Damage + player.WeaponDamage;
+
         }
 
 		if (player.IsAlive())
 		{
-			Console.WriteLine($"✅ {enemy.Name} wurde besiegt!");
+			Console.WriteLine($"{enemy.Name} wurde besiegt!");
 
-			Console.WriteLine("\n💾 Moechtest du deinen Fortschritt jetzt speichern?");
+			Console.WriteLine("\nMoechtest du deinen Fortschritt jetzt speichern?");
 			Console.WriteLine("1) Ja");
 			Console.WriteLine("2) Nein");
 
@@ -47,7 +50,7 @@ public static class CombatSystem
 			return true;
 		}
 
-		Console.WriteLine("☠️ Du wurdest besiegt...");
+		Console.WriteLine("Du wurdest besiegt...");
 		return false;
 	}
 }

@@ -10,12 +10,12 @@ public class Inventory
     public void AddItem(string item)
     {
         items.Add(item);
-        Console.WriteLine($"🎒 Du hast '{item}' erhalten.");
+        Console.WriteLine($"Du hast '{item}' erhalten.");
     }
 
     public void ShowInventory()
     {
-        Console.WriteLine("\n[📦 INVENTAR]");
+        Console.WriteLine("\n[INVENTAR]");
         if (items.Count == 0)
         {
             Console.WriteLine("Leer.");
@@ -28,7 +28,21 @@ public class Inventory
         }
     }
 
-    public bool HasItem(string item)
+
+	public void RemoveItem(string item)
+	{
+		if (items.Contains(item))
+		{
+			items.Remove(item);
+			Console.WriteLine($"{item} wurde aus dem Inventar entfernt.");
+		}
+		else
+		{
+			Console.WriteLine("Dieses Item existiert nicht im Inventar.");
+		}
+	}
+
+	public bool HasItem(string item)
     {
         return items.Contains(item);
     }
@@ -37,18 +51,18 @@ public class Inventory
     {
         if (!items.Contains(item))
         {
-            Console.WriteLine("❌ Item nicht im Inventar.");
+            Console.WriteLine("Item nicht im Inventar.");
             return;
         }
 
         switch (item)
         {
             case "Energy Drink":
-                Console.WriteLine("🧃 Du trinkst einen Energy Drink. Koffein +20");
+                Console.WriteLine("Du trinkst einen Energy Drink. Koffein +20");
                 GameManager.Status.Caffeine += 20;
                 break;
             case "Kaputte Tastatur":
-                Console.WriteLine("⌨️ Du hast ein defektes Artefakt gefunden... Vielleicht ist es spaeter wichtig.");
+                Console.WriteLine("Du hast ein defektes Artefakt gefunden... Vielleicht ist es spaeter wichtig.");
                 break;
             default:
                 Console.WriteLine("Das Item scheint keinen Effekt zu haben...");

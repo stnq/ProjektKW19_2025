@@ -14,7 +14,7 @@ public class BugEnemy
 
     public void Attack(Player player)
     {
-        Console.WriteLine($"👾 {Name} greift an fuer {Damage} Schaden!");
+        Console.WriteLine($"{Name} greift an fuer {Damage} Schaden!");
         player.TakeDamage(Damage);
     }
 

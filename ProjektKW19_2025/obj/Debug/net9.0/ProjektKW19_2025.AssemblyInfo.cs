@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjektKW19_2025")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09c71e0b6ddf92c2f88cd3c807db1b9e092e3e1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b926a8a4d7846026b7b7811b31623d9202a5bdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjektKW19_2025")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjektKW19_2025")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

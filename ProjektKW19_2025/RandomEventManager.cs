@@ -21,7 +21,7 @@ public static class RandomEventManager
     private static void WindowsUpdate(GameStatus status)
     {
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("\n🔄 ZUFALLSEVENT: Windows Update!");
+        Console.WriteLine("\nZUFALLSEVENT: Windows Update!");
         Console.ResetColor();
 
         Console.WriteLine("Windows installiert ungefragt Updates... 5 Minuten verloren.");
@@ -32,7 +32,7 @@ public static class RandomEventManager
     private static void TastaturKaputt(GameStatus status)
     {
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("\n⌨️ ZUFALLSEVENT: Deine Tastatur spinnt!");
+        Console.WriteLine("\nZUFALLSEVENT: Deine Tastatur spinnt!");
         Console.ResetColor();
 
         Console.WriteLine("Du drueckst 'A' und es kommt 'Q'... du verlierst Zeit.");

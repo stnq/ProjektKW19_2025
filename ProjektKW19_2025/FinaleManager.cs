@@ -8,7 +8,7 @@ public static class FinaleManager
     {
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("\n🔥 FINALE: Antares – Der finale Exec erscheint!");
+        Console.WriteLine("\nFINALE: Antares – Der finale Exec erscheint!");
         Console.ResetColor();
 
         BossEnemy antares = new BossEnemy(
@@ -29,7 +29,7 @@ public static class FinaleManager
         }
         else
         {
-            Console.WriteLine("☠️ Du wurdest vom finalen Exec vernichtet...");
+            Console.WriteLine("Du wurdest vom finalen Exec vernichtet...");
             Console.WriteLine("Aber vielleicht gibt es noch Hoffnung? Versuchs nochmal!");
             Console.ReadKey();
             GameManager.EndGame();
@@ -40,7 +40,7 @@ public static class FinaleManager
     {
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("🎉 GLUECKWUNSCH!");
+        Console.WriteLine("GLUECKWUNSCH!");
         Console.ResetColor();
 
         Console.WriteLine("Du hast alle Bugs bekaempft, das Legacy-System ueberlebt...");
@@ -56,7 +56,7 @@ public static class FinaleManager
         Console.WriteLine("\nWar alles nur ein Traum?");
 
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("\n💡 ABSPANN:");
+        Console.WriteLine("\nABSPANN:");
         Console.WriteLine("- Helmut Hardcode: Du selbst");
         Console.WriteLine("- Gegnerdesign: Deine schlimmsten Debug-Naechte");
         Console.WriteLine("- Codeassistenz: ChatGPT... *äh... deine harte Arbeit natürlich*");
