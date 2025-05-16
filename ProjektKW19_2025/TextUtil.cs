@@ -2,6 +2,7 @@
 using System;
 using System.Threading;
 
+
 namespace WorldsWorstGamedev
 {
     public static class TextUtil
@@ -25,8 +26,8 @@ namespace WorldsWorstGamedev
             TypeLine(" ERROR 418 – Ich bin ein Teekessel?! ");
             TypeLine("BEVOR DU REAGIEREN KANNST, WIRST DU IN DIE KONSOLE GEZOGEN.");
             TypeLine("...");
-            TypeLine("Eine Stimme fluestert: 'Willkommen in der Stack Overflow-Zone.'");
-            TypeLine("Du bist Gamedev.");
+            TypeLine("Eine Stimme fluestert: 'Willkommen in der Core.'");
+            TypeLine("Du bist verwirrt");
             Console.WriteLine();
         }
     }

@@ -11,28 +11,20 @@ public static class FinaleManager
         Console.WriteLine("\nFINALE: Antares – Der finale Exec erscheint!");
         Console.ResetColor();
 
-        BossEnemy antares = new BossEnemy(
-            "Antares – Der finale Exec",
-            150,
-            20,
-            "FinalBuildCrash()",
-            "",
-            false
-        );
+        BossEnemy antares = new BossEnemy("Antares – Der finale Exec",420,20,"FinalBuildCrash()","",false);
 
         bool sieg = CombatSystem.Fight(GameManager.Player, antares);
 
         if (sieg)
         {
-            MiniGameManager.EscapeDBahnLoop(GameManager.Status);
-            SpielBeenden();
+            FinaleManager.SpielBeenden();
         }
         else
         {
-            Console.WriteLine("Du wurdest vom finalen Exec vernichtet...");
+            Console.WriteLine("Du wurdest vom finalen Exec vernichtet Kappa...");
             Console.WriteLine("Aber vielleicht gibt es noch Hoffnung? Versuchs nochmal!");
             Console.ReadKey();
-            GameManager.EndGame();
+            GameManager.ReturnToMainMenu();
         }
     }
 
@@ -41,6 +33,7 @@ public static class FinaleManager
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("GLUECKWUNSCH!");
+		Console.WriteLine("Im ganzen Himmel und auf der Erde ... bist du alleine ... der Geehrte");
         Console.ResetColor();
 
         Console.WriteLine("Du hast alle Bugs bekaempft, das Legacy-System ueberlebt...");
@@ -57,11 +50,12 @@ public static class FinaleManager
 
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("\nABSPANN:");
-        Console.WriteLine("- Helmut Hardcode: Du selbst");
-        Console.WriteLine("- Gegnerdesign: Deine schlimmsten Debug-Naechte");
-        Console.WriteLine("- Codeassistenz: ChatGPT... *äh... deine harte Arbeit natürlich*");
-        Console.WriteLine("- Musik: Deine Kaffee-Maschine");
-        Console.ResetColor();
+        Console.WriteLine("- Du hast 'World’s Worst Gamedev' erfolgreich abgeschlossen");
+        Console.WriteLine("- Helmut kehrt zurueck in die echte Welt – mit Skillpunkten, einem Begleiter...");
+		Console.WriteLine("- Codeassistenz: ChatGPT... *äh... deine harte Arbeit natürlich*");
+		Console.WriteLine("- ...und dem Wissen, dass er vielleicht doch kein voelliger Noob ist.");
+		Console.WriteLine("\nVielen Dank fuers Spielen!");
+		Console.ResetColor();
 
         Console.WriteLine("\n[ENTER druecken, um das Spiel zu beenden]");
         Console.ReadKey();

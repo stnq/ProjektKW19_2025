@@ -1,20 +1,23 @@
 using System;
+using System.Linq;
+using ProjektKW19_2025;
 using WorldsWorstGamedev;
+
 
 public static class ZoneGameplay
 {
-    public static void PlayZone(Player player, GameStatus status, ProgressTracker progress)
+    public static void PlayZone(Player player, GameStatus status, GameState state)
     {
-        string zone = progress.CurrentZone;
+        string zone = state.ZoneName;
 		Console.Clear();
 		ShowZoneLore(zone);
 		Console.WriteLine("\n[ENTER] um fortzufahren...");
 		Console.ReadLine();
 		Console.Clear();
 		var mobs = ZoneManager.GetZoneMobs(zone);
-        var bosses = ZoneManager.GetZoneBosses(zone);
+		var bosses = ZoneManager.GetZoneBosses(zone);
 
-        while (true)
+		while (true)
         {
             Console.WriteLine($"Zone: {zone}");
 			Console.WriteLine("1) Weiter nach Links");
@@ -37,8 +40,14 @@ public static class ZoneGameplay
 							player.Inventory.AddItem("Energy Drink");
 							Console.WriteLine("Du findest einen Energy Drink beim toten Bug!");
 						}
+						if (mob.Name.Contains("Regex") && new Random().NextDouble() < 0.4)
+						{
+							Console.WriteLine("Der Ritter verliert eine verbogene Codewaffe:");
+							Console.WriteLine("Du findest den 'Code-Korkenzieher' (+5 DMG)");
+							player.Inventory.AddItem("Waffe: Code-Korkenzieher");
+						}
 
-						progress.RegisterKill(zone, false, mob.Name);
+						state.RegisterKill(zone, false, mob.Name);
 
 						int chance = new Random().Next(0, 100);
 
@@ -67,6 +76,9 @@ public static class ZoneGameplay
 							Console.WriteLine("Sie entpackt sich selbst...");
 							Console.WriteLine("...und öffnet einen Ordner namens `AlteHausaufgaben_LetzteWoche_FINAL_v3_EndlichFinal.zip`.");
 						}
+
+						GameManager.PrüfeZufallsEvent(status);
+
 					}
 					break;
 
@@ -74,10 +86,10 @@ public static class ZoneGameplay
                     Console.WriteLine("Aktive Bosse in dieser Zone:");
                     foreach (var b in bosses)
                     {
-                        Console.WriteLine($"- {b.Name} | Besiegt: {progress.DefeatedBosses.Contains(b.Name)}");
+                        Console.WriteLine($"- {b.Name} | Besiegt: {state.DefeatedBosses.Contains(b.Name)}");
                     }
 
-                    var unbesiegt = bosses.FindAll(b => !progress.DefeatedBosses.Contains(b.Name));
+                    var unbesiegt = bosses.FindAll(b => !state.DefeatedBosses.Contains(b.Name));
                     if (unbesiegt.Count == 0)
                     {
                         Console.WriteLine("Alle Bosse in dieser Zone wurden bereits besiegt.");
@@ -87,7 +99,7 @@ public static class ZoneGameplay
                     var boss = unbesiegt[new Random().Next(unbesiegt.Count)];
                     if (CombatSystem.Fight(player, boss))
                     {
-                        progress.RegisterKill(zone, true, boss.Name);
+                        state.RegisterKill(zone, true, boss.Name);
 
 						if (boss.Name.Contains("Dependency"))
 						{
@@ -98,8 +110,8 @@ public static class ZoneGameplay
 						else if (boss.Name.Contains("SpaghettiBot"))
 						{
 							Console.WriteLine("SpaghettiBot 3000 entlädt ein Relikt aus der Legacy-Zeit:");
-							Console.WriteLine("Du erhältst die legendäre 'Ama no Sakahoko' (+15 DMG)");
-							player.Inventory.AddItem("Waffe: Ama no Sakahoko");
+							Console.WriteLine("Du erhältst die legendäre 'Deadlinemancers Dolch' (+15 DMG)");
+							player.Inventory.AddItem("Waffe: Deadlinemancers Dolch");
 						}
 
 						if (boss.UnlocksCompanion)
@@ -132,13 +144,13 @@ public static class ZoneGameplay
 
 						SaveSystem.Save(new GameState
                         {
-                            ZoneName = progress.CurrentZone,
+                            ZoneName = state.ZoneName,
                             Motivation = status.Motivation,
                             Caffeine = status.Caffeine,
                             Skill = status.SkillPoints,
                             InventoryItems = player.Inventory.GetAllItems(),
                             CompanionName = player.Companion?.Name ?? "",
-                            DefeatedBosses = progress.DefeatedBosses
+                            DefeatedBosses = state.DefeatedBosses
                         });
                     }
                     break;
@@ -152,43 +164,104 @@ public static class ZoneGameplay
 					break;
 				
                 case "5":
-                    if (progress.ZoneBossGoalReached(zone))
-                    {
-                        if (zone == "Mainframe-Zitadelle")
-                        {
-                            Console.WriteLine("Du hast zwei Endbosse besiegt...");
-                            Console.WriteLine("Ein Riss öffnet sich in der Konsole...");
-                            Console.WriteLine("Der finale Fehler naht: Antares – Der Exec.");
-                            FinaleManager.StarteFinalkampf();
-                            return;
-                        }
+					if (state.ZoneBossGoalReached(zone))
+					{
 
-                        string next = ZoneManager.GetNextZone(zone);
-                        Console.WriteLine($"Du darfst jetzt in die {next} weiterziehen. Fortfahren?");
-                        Console.WriteLine("1) Ja 2) Nein");
+						if (zone == "Dev-Schlucht" && !state.QuizDone["NameQuiz"])
+						{
+							Console.Clear();
+							Console.WriteLine("Plötzlich steht dir ein NPC im Weg:");
+							Console.WriteLine("\"Ich bin Alexander der Große Isaak McQueen von Ulrich!\"");
+							Console.WriteLine("\"NUR wer meinen VORNAMEN kennt, darf weiterziehen.\"");
 
-                        if (Console.ReadLine() == "1")
-                        {
-                            progress.CurrentZone = next;
-                            if (next == "Finale")
-                            {
-                                FinaleManager.StarteFinalkampf();
-                                return;
-                            }
-                            else
-                            {
-                                PlayZone(player, status, progress);
-                                return;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Du musst mehr Bosse besiegen, um weiterzuziehen.");
-                    }
-                    break;
+							Console.Write("\nWas ist mein Vorname? > ");
+							string vorname = Console.ReadLine().Trim();
 
-                case "6":
+							if (vorname.Equals("Alexander", StringComparison.OrdinalIgnoreCase))
+							{
+								Console.WriteLine("\n ...du hast recht. Ich heiße tatsächlich Alexander.");
+								Console.WriteLine("Isaak McQueen ist eher... für die Show.");
+								Console.WriteLine("Sei vorsichtig in den Ruinen! Viel Glück ... wirst du Später brauchen können, kekeke.");
+								state.QuizDone["NameQuiz"] = true;
+							}
+							else
+							{
+								Console.WriteLine("\nFalsch! Denk nochmal nach. Vielleicht kennst du mich besser als du denkst...");
+								return;
+							}
+						}
+
+						if (zone == "StackOverflow-Ruinen" && !state.QuizDone["StackQuiz"])
+						{
+							Console.Clear();
+							Console.WriteLine("Ein uraltes StackOverflow-Terminal erwacht...");
+
+							if (GameManager.StackOverflowQuiz(status))
+							{
+								Console.WriteLine("Du hast bestanden! Du verstehst StackOverflow... zumindest ein bisschen.");
+								state.QuizDone["StackQuiz"] = true;
+							}
+							else
+							{
+								Console.WriteLine("Du bist durchgefallen. Versuche es erneut!");
+								return;
+							}
+						}
+
+						if (zone == "Mainframe-Zitadelle" && !state.QuizDone["DBahnQuiz"])
+						{
+							Console.Clear();
+							Console.WriteLine("Ein Bug erscheint in Form eines Fahrplans...");
+
+							if (GameManager.EscapeDBahnLoop(status))
+							{
+								Console.WriteLine("Du hast den Fahrplan entschluesselt und den Loop verlassen.");
+								state.QuizDone["DBahnQuiz"] = true;
+							}
+							else
+							{
+								Console.WriteLine("Du hast dich im dBahn Loop verirrt. Versuche es nochmal.");
+								return;
+							}
+						}
+
+						if (zone == "Mainframe-Zitadelle")
+						{
+							Console.WriteLine("Du hast zwei Endbosse besiegt...");
+							Console.WriteLine("Ein Riss oeffnet sich in der Konsole...");
+							Console.WriteLine("Der finale Fehler naht: Antares – Der Exec.");
+							FinaleManager.StarteFinalkampf();
+							return;
+						}
+
+						string next = ZoneManager.GetNextZone(zone);
+						Console.WriteLine($"Du darfst jetzt in die {next} weiterziehen. Fortfahren?");
+						Console.WriteLine("1) Ja\n2) Nein");
+
+						if (Console.ReadLine() == "1")
+						{
+							state.ZoneName = next;
+
+							if (next == "Finale")
+							{
+								Console.WriteLine("Du naeherst dich dem finalen Bug: Antares...");
+								FinaleManager.StarteFinalkampf();
+								return;
+							}
+							else
+							{
+								PlayZone(player, status, state);
+								return;
+							}
+						}
+					}
+					else
+					{
+						Console.WriteLine("Du musst mehr Bosse besiegen, um weiterzuziehen.");
+					}
+					break;
+
+				case "6":
                     Console.WriteLine("Du kehrst zum Hauptmenue zurueck...");
                     GameManager.ReturnToMainMenu();
                     return;
@@ -225,7 +298,7 @@ public static class ZoneGameplay
 
 			if (selected.Contains("Energy Drink"))
 			{
-				Console.WriteLine("Du trinkst einen Energy Drink und bekommst +50 HP & 20 Koffein!");
+				Console.WriteLine("Du trinkst einen Energy Drink und wirst für +50 HP geheilt!");
 				player.Heal(50);
 				player.Inventory.RemoveItem(selected);
 			}
@@ -236,9 +309,9 @@ public static class ZoneGameplay
 					player.EquippedWeapon = "Refactor-Katana";
 					player.WeaponDamage = 10;
 				}
-				else if (selected.Contains("Sakahoko"))
+				else if (selected.Contains("Deadlinemancers Dolch"))
 				{
-					player.EquippedWeapon = "Ama no Sakahoko";
+					player.EquippedWeapon = "Deadlinemancers Dolch";
 					player.WeaponDamage = 15;
 				}
 				else if (selected.Contains("Korkenzieher"))
@@ -247,7 +320,7 @@ public static class ZoneGameplay
 					player.WeaponDamage = 5;
 				}
 
-				Console.WriteLine($"🗡️ Du hast nun {player.EquippedWeapon} ausgeruestet.");
+				Console.WriteLine($"Du hast {player.EquippedWeapon} ausgeruestet.");
 			}
 
 			else if (selected.Contains("TrollShadow") || selected.Contains("GitShadow") || selected.Contains("RNG-Fragment"))

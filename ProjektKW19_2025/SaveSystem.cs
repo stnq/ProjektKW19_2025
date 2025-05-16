@@ -4,8 +4,7 @@ using System.Text.Json;
 
 public static class SaveSystem
 {
-    private static readonly string SavePath = Path.Combine(
-        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "WWD", "savegame.json");
+    private static readonly string SavePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "WWD", "savegame.json");
 
     public static void Save(GameState state)
     {

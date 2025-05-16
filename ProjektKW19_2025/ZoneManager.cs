@@ -11,22 +11,21 @@ public static class ZoneManager
 			"Dev-Schlucht" => new List<BugEnemy>
 			{
 				new BugEnemy("OffByOne-Gnome", 20, 5),
-				new BugEnemy("Nullie der Nullinator", 15, 4),
-				new BugEnemy("Division durch Kevin", 10, 10),
-				new BugEnemy("Magischer Boolean", 18, 6),
+				new BugEnemy("Nullie der Nullinator", 16, 4),
+				new BugEnemy("Division durch Kevin", 16, 10),
 				new BugEnemy("Regex-Ritter", 25, 5),
 			},
 			"StackOverflow-Ruinen" => new List<BugEnemy>
 			{
-				new BugEnemy("Console.Chaos()", 35, 8),
-				new BugEnemy("ArgumentOutOfRange", 30, 9),
-				new BugEnemy("GhostDependency", 28, 7)
+				new BugEnemy("Konsolen.Chaos()", 35, 8),
+				new BugEnemy("ArgumentOutOfRangeRover", 35, 9),
+				new BugEnemy("GhostDependency", 35, 7)
 			},
 			"Mainframe-Zitadelle" => new List<BugEnemy>
 			{
-				new BugEnemy("Deadline-Daemon", 50, 12),
-				new BugEnemy("MissingSemicolon", 40, 10),
-				new BugEnemy("Captain CodeSmell", 45, 11),
+				new BugEnemy("Deadline-Daemon", 40, 15),
+				new BugEnemy("FehlendenSemicolon", 50, 10),
+				new BugEnemy("Kapitän CodeSmell", 55, 11),
 			},
 			_ => new List<BugEnemy>()
 		};
@@ -38,7 +37,6 @@ public static class ZoneManager
 		{
 			"Dev-Schlucht" => new List<BossEnemy>
 			{
-				new BossEnemy("Regex-Ritter", 25, 5, "PatternOverkill()", "", false),
 				new BossEnemy("Fehlermeldungs-Fee", 30, 6, "MessageBoxRain()", "", false),
 				new BossEnemy("Der Stackleaker", 35, 5, "MemoryDrain()", "", false),
 				new BossEnemy("Namespace-Ninja", 28, 7, "ShadowClone.cs()", "", false)
@@ -57,11 +55,11 @@ public static class ZoneManager
 			"Mainframe-Zitadelle" => new List<BossEnemy>
 			{
 				new BossEnemy("Recursive Rambo", 100, 13, "StackOverflow()", "", false),
-				new BossEnemy("Compiler Calamity", 105, 14, "SyntaxRage()", "", false),
-				new BossEnemy("ZombieTaskAwaiter", 95, 12, "AsyncHell()", "", false),
+				new BossEnemy("Compiler-Spacko", 105, 14, "SyntaxRage()", "", false),
+				new BossEnemy("ZombieTaskCouseng", 150, 12, "AsyncHell()", "", false),
 				new BossEnemy("ThreadWarlock", 110, 15, "DeadlockDoom()", "", false),
-				new BossEnemy("System.Windows.Error", 115, 16, "BlueScreen()", "", false),
-				new BossEnemy("Antares â€“ Der Exec", 150, 20, "FinalBuildCrash()", "", false)
+				new BossEnemy("keineReturnWerte", 115, 16, "BlueScreen()", "", false),
+				
 			},
 
 			_ => new List<BossEnemy>()
