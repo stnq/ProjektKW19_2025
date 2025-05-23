@@ -3,48 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\bossenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\bossenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\bugenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\bugenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\finalemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\finalemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\zonemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\zonemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\zonegameplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\zonegameplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\zonemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\zonemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\textutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\textutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\finalemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\finalemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\bugenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\bugenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|c:\\users\\patrichiioan-cristia\\source\\repos\\projektkw19_2025\\projektkw19_2025\\bossenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0720B0-3887-4148-A7B4-E56AE283FE1F}|ProjektKW19_2025\\ProjektKW19_2025.csproj|solutionrelative:projektkw19_2025\\bossenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,123 +71,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ZoneManager.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneManager.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\ZoneManager.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneManager.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\ZoneManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T13:46:18.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SaveSystem.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\SaveSystem.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\SaveSystem.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\SaveSystem.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\SaveSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T13:25:00.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FinaleManager.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\FinaleManager.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\FinaleManager.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\FinaleManager.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\FinaleManager.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwDkAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T12:20:02.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameManager.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\GameManager.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameManager.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\GameManager.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAADwv24AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T11:00:56.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameState.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameState.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\GameState.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameState.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\GameState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T10:50:41.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Player.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\Player.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Player.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\Player.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwA4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T10:42:47.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ZoneGameplay.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneGameplay.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\ZoneGameplay.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneGameplay.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\ZoneGameplay.cs",
-              "ViewState": "AgIAADUBAAAAAAAAAAAYwDcBAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T10:21:42.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CombatSystem.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\CombatSystem.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\CombatSystem.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\CombatSystem.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\CombatSystem.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwBcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T10:18:37.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BossEnemy.cs",
-              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\BossEnemy.cs",
-              "RelativeDocumentMoniker": "ProjektKW19_2025\\BossEnemy.cs",
-              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\BossEnemy.cs",
-              "RelativeToolTip": "ProjektKW19_2025\\BossEnemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T10:18:09.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "BugEnemy.cs",
               "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\BugEnemy.cs",
               "RelativeDocumentMoniker": "ProjektKW19_2025\\BugEnemy.cs",
@@ -196,15 +83,145 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "CombatSystem.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\CombatSystem.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\CombatSystem.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\CombatSystem.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\CombatSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T10:18:37.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Enemy.cs",
               "RelativeDocumentMoniker": "ProjektKW19_2025\\Enemy.cs",
               "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Enemy.cs",
               "RelativeToolTip": "ProjektKW19_2025\\Enemy.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA7wBwAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T10:13:04.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FinaleManager.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\FinaleManager.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\FinaleManager.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\FinaleManager.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\FinaleManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwDgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:20:02.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameManager.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\GameManager.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameManager.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\GameManager.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAhwFoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T11:00:56.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameState.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\GameState.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\GameState.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\GameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T10:50:41.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Player.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\Player.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\Player.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\Player.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T10:42:47.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaveSystem.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\SaveSystem.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\SaveSystem.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\SaveSystem.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\SaveSystem.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:25:00.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TextUtil.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\TextUtil.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\TextUtil.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\TextUtil.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\TextUtil.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T09:27:40.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ZoneGameplay.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneGameplay.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\ZoneGameplay.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneGameplay.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\ZoneGameplay.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAQwJkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T10:21:42.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ZoneManager.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneManager.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\ZoneManager.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\ZoneManager.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\ZoneManager.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:46:18.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BossEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\BossEnemy.cs",
+              "RelativeDocumentMoniker": "ProjektKW19_2025\\BossEnemy.cs",
+              "ToolTip": "C:\\Users\\PatrichiIoan-Cristia\\source\\repos\\ProjektKW19_2025\\ProjektKW19_2025\\BossEnemy.cs",
+              "RelativeToolTip": "ProjektKW19_2025\\BossEnemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T10:18:09.176Z",
               "EditorCaption": ""
             }
           ]

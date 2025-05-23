@@ -151,7 +151,7 @@ public static class ZoneGameplay
                             InventoryItems = player.Inventory.GetAllItems(),
                             CompanionName = player.Companion?.Name ?? "",
                             DefeatedBosses = state.DefeatedBosses
-                        });
+                        }, GameManager.ActiveSlot);
                     }
                     break;
 

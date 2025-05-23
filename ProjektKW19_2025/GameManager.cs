@@ -8,6 +8,7 @@ namespace WorldsWorstGamedev
 		public static Player Player { get; private set; }
 		public static GameState State { get; private set; }
 		public static GameStatus Status { get; private set; }
+		public static int ActiveSlot { get; private set; } = 1;
 
 		public static void Start()
 		{
@@ -40,6 +41,10 @@ namespace WorldsWorstGamedev
 
 		public static void NewGame()
 		{
+			Console.Clear();
+			Console.WriteLine("Neues Spiel starten – Wähle Speicher-Slot:");
+			int slot = SelectSlot();
+			ActiveSlot = slot;
 			State = new GameState();
 			InitializeGame();
 			TextUtil.ShowIntro();
@@ -48,28 +53,24 @@ namespace WorldsWorstGamedev
 
 		public static void LoadGame()
 		{
-			State = SaveSystem.Load();
+			Console.Clear();
+			Console.WriteLine("Wähle einen Speicher-Slot zum Laden:");
+			int slot = SelectSlot();
+			State = SaveSystem.Load(slot);
+			ActiveSlot = slot;
+			InitializeGame();
+			ZoneGameplay.PlayZone(Player, Status, State);
+		}
 
-			Player = new Player("Helmut Hardcode");
-			Player.Inventory = new Inventory();
+		private static int SelectSlot()
+		{
+			Console.WriteLine("1) Slot 1\n2) Slot 2\n3) Slot 3");
+			Console.Write("Auswahl: ");
+			if (int.TryParse(Console.ReadLine(), out int slot) && slot >= 1 && slot <= 3)
+				return slot;
 
-			Status = new GameStatus
-			{
-				Motivation = State.Motivation,
-				Caffeine = State.Caffeine,
-				SkillPoints = State.Skill
-			};
-
-			foreach (var item in State.InventoryItems)
-				Player.Inventory.AddItem(item);
-
-			if (!string.IsNullOrEmpty(State.CompanionName))
-				Player.Companion = new Companion(State.CompanionName, 4);
-
-			if (State.ZoneName == "Dev-Schlucht" || State.ZoneName == "TutorialZone")
-				ShowFirstChoice();
-			else
-				ZoneGameplay.PlayZone(Player, Status, State);
+			Console.WriteLine("Ungültige Eingabe. Standard: Slot 1 wird genutzt.");
+			return 1;
 		}
 
 		public static void StartTutorial()
@@ -85,7 +86,7 @@ namespace WorldsWorstGamedev
 				Status.ErhöheSkill("NullReference verstehen");
 				State.ZoneName = "Dev-Schlucht";
 
-				SaveSystem.Save(State);
+				SaveSystem.Save(State, GameManager.ActiveSlot);
 
 				ZoneGameplay.PlayZone(Player, Status, State);
 			}

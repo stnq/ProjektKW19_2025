@@ -28,7 +28,14 @@ namespace WorldsWorstGamedev
             TypeLine("...");
             TypeLine("Eine Stimme fluestert: 'Willkommen in der Core.'");
             TypeLine("Du bist verwirrt");
-            Console.WriteLine();
+			Console.ForegroundColor = ConsoleColor.Yellow;
+			Console.WriteLine("   ///// ");
+			Console.WriteLine("  | o o |");
+			Console.WriteLine(" (|  ^  |)");
+			Console.WriteLine("  | [_] |");
+			Console.WriteLine("   ----- ");
+			Console.ResetColor();
+			Console.WriteLine();
         }
     }
 }
